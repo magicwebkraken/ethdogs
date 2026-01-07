@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>We Love Dogs</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <style>
+      body {
+        opacity: 0;
+        transition: opacity 0.2s ease 0.2s;
+      }
+
+      .loaded body {
+        opacity: 1;
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="shortcut icon" href="/images/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .hero__buttons {
+        width: 100%;
+        display: flex !important;
+      }
+      .socials {
+        font-size: 30px !important;
+      }
+      .magic {
+        position: absolute !important;
+        bottom: -15% !important;
+      }
+      .hero__button {
+        font-size: 16px;
+        padding: 20px;
+      }
+      .hero-title {
+        font-size: 60px !important;
+      }
+      /* Tablet and larger */
+      @media screen and (min-width: 768px) {
+        .hero__buttons {
+          width: 70% !important;
+          display: flex !important;
+        }
+        .socials {
+          font-size: 40px !important;
+        }
+        .magic {
+          position: absolute !important;
+          bottom: -15% !important;
+        }
+      }
+
+      /* Desktop and larger */
+      @media screen and (min-width: 1024px) {
+        .hero__buttons {
+          width: 50% !important;
+          padding: 20px !important;
+          z-index: 4 !important;
+          display: flex !important;
+        }
+        .hero__button {
+          font-size: 30px;
+          padding: 20px;
+          width: 100% !important;
+        }
+        .socials {
+          font-size: 55px !important;
+        }
+        .magic {
+          position: absolute !important;
+          bottom: -15% !important;
+        }
+        .hero-title {
+          font-size: 200px !important;
+        }
+      }
+      /* Very large screens */
+      @media screen and (min-width: 1400px) {
+        .socials {
+          position: absolute !important;
+          font-size: 62px !important;
+        }
+        .magic {
+          position: absolute !important;
+          bottom: -15% !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="menu-open-bg"></div>
+      <header class="header">
+        <div class="header__bg">
+          <img src="images/bg.png" alt="BG" />
+        </div>
+        <div class="header__container">
+          <a href="#" class="header__logo"
+            ><img src="images/logo.png" alt="Logo" style="width: 50px"
+          /></a>
+          <div class="header__menu menu">
+            <button type="button" class="menu__icon icon-menu">
+              <span></span>
+            </button>
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" data-goto=".about" class="menu__link">About</a>
+                </li>
+
+                <li class="menu__item">
+                  <a
+                    href="#"
+                    data-goto=".how"
+                    data-goto-top="60"
+                    class="menu__link"
+                    >How to buy</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="#"
+                    data-goto=".tokenomics"
+                    data-goto-top="100"
+                    class="menu__link"
+                    >Tokenomics</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="#" data-goto=".footer" class="menu__link">Contact</a>
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="https://t.me/dogscoinTG"
+                    target="_blank"
+                    class="menu__link"
+                    >Memes</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <a
+            href="https://app.uniswap.org/swap?&chain=mainnet&use=v2&outputCurrency=0x3e460635E4415b6Cf562B51f348fE2e5954407D0"
+            class="header__buy-now buy-now"
+            data-da=".menu__body, 991.98"
+            target="_blank"
+          >
+            <span>Buy now</span>
+          </a>
+        </div>
+      </header>
+
+      <main class="page">
+        <section class="page__hero hero">
+          <div class="hero__bg">
+            <img src="images/hero-bg.png" alt="Image" />
+            <img src="images/hero-car.png" style="z-index: 50" alt="Image" />
+          </div>
+          <div class="hero__container">
+            <h1
+              class="hero__title"
+              style="
+                color: white;
+                -webkit-text-stroke: 5px black;
+
+                font-family: genty;
+                paint-order: stroke fill;
+              "
+            >
+              <span></span>
+              <span
+                style="text-transform: capitalize; padding-left: 30px"
+                class="hero-title"
+                >We Love Dogs</span
+              >
+            </h1>
+            <div class="hero__content">
+              <!-- <p class="hero__text">Coming soon on</p> -->
+              <div class="hero__buttons">
+                <!-- <a
+                  target="_blank"
+                  href="https://www.okx.com"
+                  class="hero__button"
+                >
+                  <img src="images/okx.svg" alt="Image" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://poloniex.com"
+                  class="hero__button"
+                >
+                  <img src="images/02.png" alt="Image" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.gate.io/en"
+                  class="hero__button"
+                >
+                  <img src="images/03.png" alt="Image" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.mexc.com"
+                  class="hero__button"
+                >
+                  <img src="images/04.png" alt="Image" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://m.lbank.com"
+                  class="hero__button"
+                >
+                  <img src="images/05.png" alt="Image" />
+                </a>
+                <a target="_blank" href="https://jup.ag" class="hero__button">
+                  <img src="images/06.png" alt="Image" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.bitget.com"
+                  class="hero__button"
+                >
+                  <img src="images/07.png" alt="image" />
+                </a> -->
+                <p class="hero__button" style="text-align: center">
+                  We ❤️ Dogs ($DOGS) is the ultimate community token for dog
+                  lovers worldwide — celebrating man’s best friend with fun,
+                  memes, and unstoppable wag energy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="about" class="page__about about" data-watch="navigator">
+          <div class="about__top">
+            <img src="images/top.png" alt="Image" />
+          </div>
+          <div class="about__body">
+            <div class="about__image">
+              <img src="images/01.jpg" alt="Image" />
+            </div>
+            <div class="about__content content-about">
+              <div class="content-about__bg">
+                <img src="images/bg_1.png" alt="Image" />
+              </div>
+              <div class="content-about__body">
+                <h2
+                  class="content-about__title"
+                  data-watch-threshold="1"
+                  data-watch-once=""
+                  data-watch=""
+                >
+                  <span>Why</span> <span>We Love Dogs?</span>
+                </h2>
+                <p
+                  class="content-about__text"
+                  data-watch-threshold="0.7"
+                  data-watch-once=""
+                  data-watch=""
+                  style="color: rgb(237, 202, 225)"
+                >
+                  WE LOVE DOGS ($DOGS) is more than just another meme coin. It's
+                  a celebration of our furry friends and the joy they bring to
+                  our lives every day.
+                  <br />
+                  <br />
+                  Built by dog lovers, for dog lovers. WE LOVE DOGS represents
+                  the unbreakable bond between humans and their canine
+                  companions, spreading pawsitive vibes and building a community
+                  that celebrates man's best friend with unstoppable wag energy.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="about__bottom bottom-about">
+            <div class="bottom-about__container">
+              <div class="bottom-about__social">
+                <a
+                  target="_blank"
+                  href="https://dexscreener.com/ethereum/0x3e460635E4415b6Cf562B51f348fE2e5954407D0"
+                  class="bottom-about__social-item"
+                >
+                  <img src="images/01.svg" alt="logo" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.dextools.io/app/ether/pairexplorer/0x3e460635E4415b6Cf562B51f348fE2e5954407D0"
+                  class="bottom-about__social-item"
+                >
+                  <img src="images/02.svg" alt="logo" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://x.com/dogscoinX"
+                  class="bottom-about__social-item"
+                >
+                  <img src="images/03.svg" alt="logo" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://t.me/dogscoinTG"
+                  class="bottom-about__social-item"
+                >
+                  <img src="images/04.svg" alt="logo" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://etherscan.io/token/0x3e460635E4415b6Cf562B51f348fE2e5954407D0"
+                  class="bottom-about__social-item"
+                >
+                  <img src="images/05.svg" alt="logo" />
+                </a>
+              </div>
+              <a
+                target="_blank"
+                href="https://app.uniswap.org/swap?&chain=mainnet&use=v2&outputCurrency=0x3e460635E4415b6Cf562B51f348fE2e5954407D0"
+                class="bottom-about__buy-now buy-now buy-now--big"
+              >
+                <span>Buy now</span>
+              </a>
+              <div class="bottom-about__ca">
+                <button class="copy-ca-btn">
+                  <img src="images/copy.svg" alt="Icon" />
+                </button>
+                <span>0x3e460635E4415b6Cf562B51f348fE2e5954407D0</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="page__image page__image--first" data-prlx-parent="">
+          <img data-prlx="" src="images/01_1.jpg" alt="Image" />
+          <img src="images/01_1.jpg" alt="Image" />
+        </div>
+        <section id="how" class="page__how how" data-watch="navigator" style="">
+          <div class="how__line line">
+            <div class="line__body">
+              <div class="line__row">
+                <div class="line__item">
+                  <span>How to buy</span>
+                </div>
+                <div class="line__item">
+                  <img src="images/q.svg" alt="Icon" />
+                </div>
+                <div class="line__item">
+                  <span>How to buy</span>
+                </div>
+                <div class="line__item">
+                  <img src="images/q.svg" alt="Icon" />
+                </div>
+                <div class="line__item">
+                  <span>How to buy</span>
+                </div>
+                <div class="line__item">
+                  <img src="images/q.svg" alt="Icon" />
+                </div>
+              </div>
+              <div class="line__row">
+                <div class="line__item">
+                  <span>How to buy</span>
+                </div>
+                <div class="line__item">
+                  <img src="images/q.svg" alt="Icon" />
+                </div>
+                <div class="line__item">
+                  <span>How to buy</span>
+                </div>
+                <div class="line__item">
+                  <img src="images/q.svg" alt="Icon" />
+                </div>
+                <div class="line__item">
+                  <span>How to buy</span>
+                </div>
+                <div class="line__item">
+                  <img src="images/q.svg" alt="Icon" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="how__body">
+            <div class="how__content">
+              <ul data-watch-threshold="0.7" data-watch-once="" data-watch="">
+                <li data-watch-threshold="1" data-watch-once="" data-watch="">
+                  <span>1</span>
+                  <div>
+                    <h3>Create a Wallet</h3>
+                    <p>
+                      Download MetaMask or your wallet of choice from the app
+                      store or Google Play store for free. Desktop users,
+                      download the MetaMask extension by going to the Chrome Web
+                      Store.
+                    </p>
+                  </div>
+                </li>
+                <li data-watch-threshold="1" data-watch-once="" data-watch="">
+                  <span>2</span>
+                  <div>
+                    <h3>Get some ETH</h3>
+                    <p>
+                      Have ETH in your wallet to swap to $DOGS. If you don’t
+                      have any ETH, you can buy ETH from an exchange or use a
+                      cross-chain swap to send it to your wallet.
+                    </p>
+                  </div>
+                </li>
+                <li data-watch-threshold="1" data-watch-once="" data-watch="">
+                  <span>3</span>
+                  <div>
+                    <h3>Go to Uniswap</h3>
+                    <p>
+                      Connect to Uniswap. Go to uniswap.org in Google Chrome or
+                      on the browser inside your MetaMask app. Connect your
+                      wallet. Paste the $DOGS token address into Uniswap and
+                      confirm the swap. When MetaMask prompts you for a wallet
+                      signature, sign.
+                    </p>
+                  </div>
+                </li>
+                <li data-watch-threshold="1" data-watch-once="" data-watch="">
+                  <span>4</span>
+                  <div>
+                    <h3>Swap</h3>
+                    <p>Switch ETH for $DOGS</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="how__image">
+              <img src="images/01.png" alt="Image" />
+            </div>
+          </div>
+        </section>
+        <div class="page__video video">
+          <div class="video__bg">
+            <img src="images/videoBG.png" alt="Image" />
+          </div>
+          <div class="video__video-box">
+            <button id="play-btn"><img src="/images/play.png" alt="" /></button>
+            <video
+              id="video"
+              autoplay
+              muted
+              playsinline
+              loop
+              src="/media/video.mp4"
+            ></video>
+          </div>
+          <div class="video__crowd">
+            <img src="images/crowd.png" alt="Crowd" />
+          </div>
+        </div>
+        <section
+          id="tokenomics"
+          class="page__tokenomics tokenomics"
+          data-watch="navigator"
+        >
+          <div class="tokenomics__top top-tokenomics">
+            <div class="top-tokenomics__bg">
+              <img src="images/01_1.svg" alt="BG" />
+            </div>
+            <div class="top-tokenomics__container">
+              <h2 class="top-tokenomics__title">tokenomics</h2>
+            </div>
+          </div>
+          <div
+            class="tokenomics__main main-tokenomics"
+            data-watch-threshold="0.8"
+            data-watch-once=""
+            data-watch=""
+          >
+            <div class="main-tokenomics__top">1,000,000,000</div>
+            <div class="main-tokenomics__bottom">
+              <span>$DOGS</span>
+              <span>Token Supply</span>
+            </div>
+          </div>
+          <div class="tokenomics__bottom bottom-tokenomics">
+            <div class="bottom-tokenomics__left">
+              <div class="bottom-tokenomics__left-bg">
+                <img src="images/02_1.svg" alt="BG" />
+              </div>
+              <div class="bottom-tokenomics__left-time">
+                <span>24:7</span>
+              </div>
+            </div>
+            <div class="bottom-tokenomics__right">
+              <div class="bottom-tokenomics__right-bg">
+                <img src="images/03_1.svg" alt="BG" />
+              </div>
+              <div class="bottom-tokenomics__right-text">Buy/Sell Tax: 0</div>
+            </div>
+          </div>
+        </section>
+        <div
+          class="page__image page__image--second"
+          data-prlx-parent=""
+          style="position: relative"
+        >
+          <img data-prlx="" src="images/02.jpg" alt="Image" />
+          <img
+            src="images/02-2.png"
+            alt="Image"
+            style="padding: 0 0 0 0; z-index: 1"
+            class="magic"
+          />
+        </div>
+      </main>
+      <footer id="contacts" class="footer" data-watch="navigator">
+        <div class="footer__top" style="display: none">
+          <h3 class="footer__top-title">
+            <!-- <span>Available on:</span> -->
+          </h3>
+          <div class="footer__top-items"></div>
+        </div>
+        <div class="footer__main">
+          <div
+            class=""
+            style="transform: translateY(-5px) scale(102%); z-index: 5"
+          >
+            <h3
+              class="footer__main-title"
+              style="
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                position: relative;
+                padding: 10px;
+              "
+            >
+              <span
+                class="socials"
+                style="
+                  text-align: left;
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                  position: absolute;
+                  left: 10px;
+                "
+              >
+                Socials/Contact</span
+              >
+            </h3>
+          </div>
+          <div class="footer__main-right">
+            <div class="footer__main-items">
+              <div class="footer__main-row">
+                <a
+                  target="_blank"
+                  href="https://etherscan.io/token/0x3e460635E4415b6Cf562B51f348fE2e5954407D0"
+                  class="footer__main-item"
+                >
+                  <img src="images/05.svg" alt="Logo" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://coinmarketcap.com"
+                  class="footer__main-item"
+                >
+                  <img src="images/06.svg" alt="Logo" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.coingecko.com"
+                  class="footer__main-item"
+                >
+                  <img src="images/07.svg" alt="Logo" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://dexscreener.com/ethereum/0x3e460635E4415b6Cf562B51f348fE2e5954407D0"
+                  class="footer__main-item"
+                >
+                  <img src="images/01.svg" alt="Logo" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.dextools.io/app/ether/pairexplorer/0x3e460635E4415b6Cf562B51f348fE2e5954407D0"
+                  class="footer__main-item"
+                >
+                  <img src="images/02.svg" alt="Logo" />
+                </a>
+              </div>
+              <div class="footer__main-row">
+                <a
+                  target="_blank"
+                  href="https://x.com/dogscoinX"
+                  class="footer__main-item"
+                >
+                  <img src="images/03.svg" alt="Logo" />
+                </a>
+                <!-- <a
+                  target="_blank"
+                  href="https://www.gate.io"
+                  class="footer__main-item"
+                >
+                  <img src="images/gate.png" alt="Logo" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.mexc.com"
+                  class="footer__main-item"
+                >
+                  <img src="images/mexc.svg" alt="Logo" />
+                </a>-->
+
+                <a
+                  target="_blank"
+                  href="https://t.me/dogscoinTG"
+                  class="footer__main-item"
+                >
+                  <img src="images/04.svg" alt="Logo" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://tiktok.com/"
+                  class="footer__main-item"
+                >
+                  <img
+                    src="https://www.marylanddefenseattorney.net/wp-content/uploads/2024/07/tiktok-logo.png"
+                    alt="Logo"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  href="mailto:contact@welovedogs.lol"
+                  class="footer__main-item"
+                >
+                  <img
+                    src="https://purepng.com/public/uploads/large/purepng.com-mail-iconsymbolsiconsapple-iosiosios-8-iconsios-8-721522596075clftr.png"
+                    alt="Logo"
+                  />
+                </a>
+
+                <a target="_blank" class="footer__main-item">
+                  <!-- <img src="images/bitmart.png" alt="Logo" /> -->
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom bottom-footer">
+          <div class="bottom-footer__container">
+            <span>2025 © ALL RIGHTS RESERVED</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      document.getElementById("video").addEventListener(
+        "loadedmetadata",
+        function () {
+          this.currentTime = 1;
+        },
+        false
+      );
+      window.onload = function () {
+        document.getElementById("video").currentTime = 1;
+      };
+      document
+        .getElementById("play-btn")
+        .addEventListener("click", function () {
+          var video = document.getElementById("video");
+          if (video.currentTime > 0 && video.muted) {
+            video.currentTime = 0;
+          }
+          video.muted = false;
+        });
+    </script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
